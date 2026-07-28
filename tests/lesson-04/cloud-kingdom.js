@@ -3,7 +3,7 @@ let powerUp = "mushroom"
 let effect = ""
 
 // 2. Câu điều kiện if...else xác định hiệu ứng
-if (powerUp == "mushroom") {
+if (powerUp === "mushroom") {
   effect = "Mario becomes Super!"
 } else if (powerUp === "flower") {
   effect = "Mario can shoot fireballs!"
