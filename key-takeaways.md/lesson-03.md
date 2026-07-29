@@ -79,18 +79,16 @@
 ## Toán tử một ngôi
 
 Toán tử một ngôi là toán tử chỉ cần một toán hạng để thực hiện.
+Hai loại:
+
+- Prefix: toán tử nằm ở phía trước - tăng trước, trả về sau
+- Postfix: toán tử nằm ở phía sau - trả về trước, tăng sau
 
 let x = 5;
 x++;
 ++x;
 x--;
 --x;
-
-Toán tử một ngôi là toán tử chỉ cần một toán hạng để thực hiện.
-Hai loại:
-
-- Prefix: toán tử nằm ở phía trước - tăng trước, trả về sau
-- Postfix: toán tử nằm ở phía sau - trả về trước, tăng sau
 
 let a = 10;
 b = ++a; // tăng a lên 11 rồi trả về => b có giá trị là 11
