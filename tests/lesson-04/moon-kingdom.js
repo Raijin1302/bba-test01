@@ -1,4 +1,5 @@
 function createCharacters() {
+  console.log("\n━━━━━━━━━━━━━━━ 🎮 BÀI 1 🎮 ━━━━━━━━━━━━━━━\n")
   // 1. Khai báo mảng các object nhân vật
   const characters = [
     { name: "Mario", level: 10, health: 300 },
@@ -56,6 +57,7 @@ console.log(createCharacters())
 
 // =============================================================
 // =============================================================
+console.log("\n━━━━━━━━━━━━━━━ 🎮 BÀI 2 🎮 ━━━━━━━━━━━━━━━\n")
 // BÀI 2:
 
 // 1. Khai báo mảng các object nhân vật
@@ -97,7 +99,10 @@ function printLeaderBoard(players) {
       medal = "   "
     }
 
-    return `${medal}${rank}. ${player.name} - ${player.score} pts`
+    // Chuyển đổi số 1000 thành chuỗi có dấu phẩy "1,000"
+    let formatScore = player.score.toLocaleString("en-US")
+
+    return `${medal}${rank}. ${player.name} - ${formatScore} pts`
   })
 
   return formatPlayerboard.join("\n")
