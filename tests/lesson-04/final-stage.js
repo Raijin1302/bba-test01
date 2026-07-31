@@ -2,7 +2,7 @@ function findPairsDivisibleBy17() {
   let count = 0
 
   // Vòng lặp i chạy từ số 1 đến 100
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i <= 100; i++) {
     // Vòng lặp j bắt đầu từ i đến 100 ,bắt đầu từ i để tránh lặp
     for (let j = i; j < 100; j++) {
       let sum = i + j
